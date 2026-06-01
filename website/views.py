@@ -2,7 +2,7 @@ from django.shortcuts import render
 from website.forms import NameForm, PostModelForm
 from website.models import Posts
 # Create your views here.
-
+# sana
 def contact(request):
     if request.method == 'POST':
         form = PostModelForm(request.POST)
