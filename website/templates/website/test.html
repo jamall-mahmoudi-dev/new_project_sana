@@ -1,0 +1,30 @@
+
+{% load static %}
+{% load blog_tags %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="{% url  'website:test' %}" method="post">
+    {% csrf_token %}
+
+    {{ form }}
+    
+    <!-- {{form}} -->
+    
+    <button type="submit">send</button>
+    <!-- {{form}} -->
+</form>
+    <!-- <h2>Django Class</h2>
+    <p> Hello world  Django</p>
+    <p>{% zarb  10 10 %}</p>
+    <p>{{ p.message|filtering }}</p> 
+    <p>{% current_time "%Y-%m-%d %H:%M:%S"  %} </p> -->
+    {% csrf_token %}
+</body>
+</html>
